@@ -1,0 +1,218 @@
+:root{
+  --bg: #ffffff; /* claro: blanco */
+  --text: #0b1220; /* texto oscuro */
+  --card: #ffffff; /* tarjetas blancas */
+  --accent: #2563eb; /* azul profesional (light) */
+  --accent-2: #f43f5e; /* rojo secundario (still used) */
+  --muted: rgba(11,18,36,0.65);
+  --section-border: rgba(37,99,235,0.08);
+}
+
+[data-theme='dark']{
+  --bg: #0b0b0b; /* oscuro: negro */
+  --text: #ffffff; /* texto blanco */
+  --card: #0f0f10; /* tarjetas oscuras */
+  --accent: #ef4444; /* rojo (dark mode primary) */
+  --accent-2: #2563eb; /* azul como acento secundario */
+  --muted: rgba(255,255,255,0.72);
+  --section-border: rgba(239,68,68,0.12);
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Fondos decorativos por tema */
+body{
+  background-image: url('/images/bg-light.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+
+[data-theme='dark'] body{
+  background-image: url('/images/bg-dark.svg');
+}
+
+.section {
+  padding: 2.25rem 1rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid var(--section-border);
+  border-radius: 10px;
+  position: relative;
+  padding-left: 1.25rem;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(0,0,0,0.06);
+}
+
+.card-custom {
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.tool-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(37,99,235,0.06), rgba(244,63,94,0.02));
+  color: var(--text);
+  min-width: 140px;
+}
+
+.tool-icon {
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-item:hover{
+  transform: translateY(-4px);
+  transition: transform .18s ease;
+  box-shadow: 0 8px 20px rgba(59,130,246,0.08);
+}
+
+/* Proyecto: estilo de tarjeta e imagen */
+.project-card{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, background-color .12s ease;
+}
+
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(2,6,23,0.12);
+}
+
+.project-card:active{
+  transform: translateY(-2px) scale(.995);
+}
+
+.project-img{
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform .18s ease;
+}
+
+.project-card:hover .project-img{
+  transform: scale(1.06);
+}
+
+/* Responsivo: en pantallas pequeñas apilar */
+@media (max-width: 767px){
+  .project-card{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-img{
+    width: 100%;
+    height: 160px;
+  }
+}
+
+/* Navbar colors using accent */
+.navbar{
+  background: linear-gradient(90deg, rgba(0,0,0,0.02), rgba(0,0,0,0.00));
+}
+
+.btn-accent{
+  border-color: transparent;
+  background: var(--accent);
+  color: white;
+}
+
+.navbar-brand{
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .navbar-brand{
+  color: var(--text) !important;
+}
+
+.btn-accent-outline{
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Secciones con colores suaves por categoría (manteniendo la paleta solicitada) */
+.section-tools{
+  background: linear-gradient(90deg, rgba(37,99,235,0.04), rgba(59,130,246,0.02));
+  border-top: 2px solid rgba(37,99,235,0.08);
+}
+
+.section-contact{
+  background: linear-gradient(90deg, rgba(244,67,54,0.02), rgba(244,67,54,0.01));
+  border-top: 2px solid rgba(244,67,54,0.06);
+}
+
+[data-theme='dark'] .section-tools{
+  background: linear-gradient(90deg, rgba(239,68,68,0.03), rgba(239,68,68,0.01));
+  border-top: 2px solid rgba(239,68,68,0.08);
+}
+
+[data-theme='dark'] .section-contact{
+  background: linear-gradient(90deg, rgba(37,99,235,0.03), rgba(37,99,235,0.01));
+  border-top: 2px solid rgba(37,99,235,0.06);
+}
+
+/* Barra lateral acentuada por sección */
+.section::before{
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 8px;
+  bottom: 8px;
+  width: 8px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+}
+
+.section-tools::before{
+  background: var(--accent);
+}
+
+.section-contact::before{
+  background: var(--accent-2);
+}
+
+[data-theme='dark'] .section::before{
+  opacity: 0.95;
+}
+
+/* Asegurar contraste del texto en tarjetas */
+.card-custom, .project-card, .tool-item{
+  color: var(--text) !important;
+}
+
+.text-muted{
+  color: var(--muted) !important;
+}
+
+.tool-name{
+  font-size: 0.9rem;
+}

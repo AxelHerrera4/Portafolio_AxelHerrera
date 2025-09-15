@@ -23,8 +23,11 @@ export default function Projects({t}){
                   <div style={{flex:1}}>
                     <h5 className="mb-1">{p.title}</h5>
                     <p className="mb-0 text-muted">{p.desc}</p>
-                    <div className="mt-2">
-                      <a className="btn btn-sm btn-accent" href={p.repo} target="_blank" rel="noreferrer">Ver repositorio</a>
+                    <div className="mt-2 d-flex gap-2">
+                      {p.live && (
+                        <a className="btn btn-sm btn-accent" href={p.live} target="_blank" rel="noreferrer">{t.lang === 'EN' ? 'View demo' : 'Ver demo'}</a>
+                      )}
+                      <a className="btn btn-sm btn-accent" href={p.repo} target="_blank" rel="noreferrer">{t.lang === 'EN' ? 'Repo' : 'Repositorio'}</a>
                     </div>
                   </div>
                 </div>

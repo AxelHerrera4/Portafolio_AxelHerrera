@@ -11,7 +11,9 @@ export default function Projects({t}){
             '/images/Sabrosura.JPG',
             '/images/ecommerceMovil.png',
             '/images/Administrador De Tareas.png',
-            '/images/SistemaCitasMedicas.JPG'
+            '/images/SistemaCitasMedicas.JPG',
+            '/images/CafetinCafeton.JPG',
+            '/images/MusicWorldd.JPG'
           ]
           const img = images[idx] || '/images/placeholder.png'
 

@@ -40,7 +40,9 @@ const translations = {
       {title: 'Delivery Sabrosura', desc: 'Aplicación de delivery para "La Sabrosura".', repo: 'https://github.com/develop-prowess/APP-MOVIL-PRW'},
   {title: 'Ecommerce móvil', desc: 'App móvil para venta de productos variados.', repo: 'https://github.com/AxelHerrera4/examen2_moviles', live: 'https://ecommerce-movile.vercel.app/'},
       {title: 'Administrador de tareas (Python)', desc: 'Herramienta de procesos y tareas multiplataforma.', repo: 'https://github.com/AxelHerrera4/ProyectoSOG4'},
-  {title: 'Sistema de agendamiento', desc: 'Reserva de citas para consultorio médico.', repo: 'https://github.com/AxelHerrera4/citasmedicas', live: 'https://citasmedespe-beige.vercel.app/'}
+  {title: 'Sistema de agendamiento', desc: 'Reserva de citas para consultorio médico.', repo: 'https://github.com/AxelHerrera4/citasmedicas', live: 'https://citasmedespe-beige.vercel.app/'},
+      {title: 'Cafetin Cafeton', desc: 'Landing page para cafetería con diseño moderno.', repo: 'https://github.com/AxelHerrera4/cafetin-cafeton', live: 'https://axelherrera4.github.io/cafetin-cafeton/'},
+      {title: 'Music World', desc: 'Página principal con paginación para música.', repo: 'https://github.com/AxelHerrera4/music-world', live: 'https://axelherrera4.github.io/music-world/index.html'}
     ]
   },
   en: {
@@ -84,7 +86,9 @@ const translations = {
       {title: 'Delivery Sabrosura', desc: 'Delivery app for "La Sabrosura".', repo: 'https://github.com/develop-prowess/APP-MOVIL-PRW'},
   {title: 'Mobile ecommerce', desc: 'Mobile app for selling various products.', repo: 'https://github.com/AxelHerrera4/examen2_moviles', live: 'https://ecommerce-movile.vercel.app/'},
       {title: 'Task manager (Python)', desc: 'Cross-platform task/process manager.', repo: 'https://github.com/AxelHerrera4/ProyectoSOG4'},
-  {title: 'Appointment scheduler', desc: 'Booking system for medical clinic.', repo: 'https://github.com/AxelHerrera4/citasmedicas', live: 'https://citasmedespe-beige.vercel.app/'}
+  {title: 'Appointment scheduler', desc: 'Booking system for medical clinic.', repo: 'https://github.com/AxelHerrera4/citasmedicas', live: 'https://citasmedespe-beige.vercel.app/'},
+      {title: 'Cafetin Cafeton', desc: 'Coffee shop landing page with modern design.', repo: 'https://github.com/AxelHerrera4/cafetin-cafeton', live: 'https://axelherrera4.github.io/cafetin-cafeton/'},
+      {title: 'Music World', desc: 'Main page with pagination for music.', repo: 'https://github.com/AxelHerrera4/music-world', live: 'https://axelherrera4.github.io/music-world/index.html'}
     ]
   }
 }

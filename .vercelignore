@@ -1,0 +1,6 @@
+node_modules
+.git
+src
+dist
+scripts
+vite.config.js

@@ -4,7 +4,7 @@ const projects = {
         {
             title: 'Sofocado - GameJam',
             desc: 'Videojuego creado para GameJam. Explora mecánicas únicas y desafíos creativos.',
-            image: './public/images/wea.jpg',
+            image: '/public/images/wea.jpg',
             repo: 'https://axeldoge.itch.io/sofocado',
             live: 'https://axeldoge.itch.io/sofocado',
             tags: ['GameDev', 'Unity', 'GameJam']
@@ -12,7 +12,7 @@ const projects = {
         {
             title: 'Delivery Sabrosura',
             desc: 'Aplicación de delivery para "La Sabrosura".',
-            image: './public/images/Sabrosura.JPG',
+            image: '/public/images/Sabrosura.JPG',
             repo: 'https://github.com/develop-prowess/APP-MOVIL-PRW',
             live: null,
             tags: ['React Native', 'Mobile']
@@ -20,7 +20,7 @@ const projects = {
         {
             title: 'Ecommerce móvil',
             desc: 'App móvil para venta de productos variados.',
-            image: './public/images/ecommerceMovil.png',
+            image: '/public/images/ecommerceMovil.png',
             repo: 'https://github.com/AxelHerrera4/examen2_moviles',
             live: 'https://ecommerce-movile.vercel.app/',
             tags: ['React', 'Ecommerce']
@@ -28,7 +28,7 @@ const projects = {
         {
             title: 'Administrador de tareas',
             desc: 'Herramienta de procesos y tareas multiplataforma en Python.',
-            image: './public/images/Administrador De Tareas.png',
+            image: '/public/images/Administrador De Tareas.png',
             repo: 'https://github.com/AxelHerrera4/ProyectoSOG4',
             live: null,
             tags: ['Python', 'Desktop']
@@ -36,7 +36,7 @@ const projects = {
         {
             title: 'Sistema de agendamiento',
             desc: 'Reserva de citas para consultorio médico.',
-            image: './public/images/SistemaCitasMedicas.JPG',
+            image: '/public/images/SistemaCitasMedicas.JPG',
             repo: 'https://github.com/AxelHerrera4/citasmedicas',
             live: 'https://citasmedespe-beige.vercel.app/',
             tags: ['React', 'Backend']
@@ -44,7 +44,7 @@ const projects = {
         {
             title: 'Cafetin Cafeton',
             desc: 'Landing page para cafetería con diseño moderno.',
-            image: './public/images/CafetinCafeton.JPG',
+            image: '/public/images/CafetinCafeton.JPG',
             repo: 'https://github.com/AxelHerrera4/cafetin-cafeton',
             live: 'https://axelherrera4.github.io/cafetin-cafeton/',
             tags: ['HTML', 'CSS', 'JS']
@@ -52,7 +52,7 @@ const projects = {
         {
             title: 'Music World',
             desc: 'Página principal con paginación para música.',
-            image: './public/images/MusicWorldd.JPG',
+            image: '/public/images/MusicWorldd.JPG',
             repo: 'https://github.com/AxelHerrera4/music-world',
             live: 'https://axelherrera4.github.io/music-world/index.html',
             tags: ['JavaScript', 'API']
@@ -62,7 +62,7 @@ const projects = {
         {
             title: 'Sofocado - GameJam',
             desc: 'Video game created for GameJam. Explore unique mechanics and creative challenges.',
-            image: './public/images/wea.jpg',
+            image: '/public/images/wea.jpg',
             repo: 'https://axeldoge.itch.io/sofocado',
             live: 'https://axeldoge.itch.io/sofocado',
             tags: ['GameDev', 'Unity', 'GameJam']
@@ -70,7 +70,7 @@ const projects = {
         {
             title: 'Delivery Sabrosura',
             desc: 'Delivery app for "La Sabrosura".',
-            image: './public/images/Sabrosura.JPG',
+            image: '/public/images/Sabrosura.JPG',
             repo: 'https://github.com/develop-prowess/APP-MOVIL-PRW',
             live: null,
             tags: ['React Native', 'Mobile']
@@ -78,7 +78,7 @@ const projects = {
         {
             title: 'Mobile ecommerce',
             desc: 'Mobile app for selling various products.',
-            image: './public/images/ecommerceMovil.png',
+            image: '/public/images/ecommerceMovil.png',
             repo: 'https://github.com/AxelHerrera4/examen2_moviles',
             live: 'https://ecommerce-movile.vercel.app/',
             tags: ['React', 'Ecommerce']
@@ -86,7 +86,7 @@ const projects = {
         {
             title: 'Task manager',
             desc: 'Cross-platform task/process manager in Python.',
-            image: './public/images/Administrador De Tareas.png',
+            image: '/public/images/Administrador De Tareas.png',
             repo: 'https://github.com/AxelHerrera4/ProyectoSOG4',
             live: null,
             tags: ['Python', 'Desktop']
@@ -94,7 +94,7 @@ const projects = {
         {
             title: 'Appointment scheduler',
             desc: 'Booking system for medical clinic.',
-            image: './public/images/SistemaCitasMedicas.JPG',
+            image: '/public/images/SistemaCitasMedicas.JPG',
             repo: 'https://github.com/AxelHerrera4/citasmedicas',
             live: 'https://citasmedespe-beige.vercel.app/',
             tags: ['React', 'Backend']
@@ -102,7 +102,7 @@ const projects = {
         {
             title: 'Cafetin Cafeton',
             desc: 'Coffee shop landing page with modern design.',
-            image: './public/images/CafetinCafeton.JPG',
+            image: '/public/images/CafetinCafeton.JPG',
             repo: 'https://github.com/AxelHerrera4/cafetin-cafeton',
             live: 'https://axelherrera4.github.io/cafetin-cafeton/',
             tags: ['HTML', 'CSS', 'JS']
@@ -110,7 +110,7 @@ const projects = {
         {
             title: 'Music World',
             desc: 'Main page with pagination for music.',
-            image: './public/images/MusicWorldd.JPG',
+            image: '/public/images/MusicWorldd.JPG',
             repo: 'https://github.com/AxelHerrera4/music-world',
             live: 'https://axelherrera4.github.io/music-world/index.html',
             tags: ['JavaScript', 'API']
@@ -267,7 +267,7 @@ function initProjects() {
 
         projectCard.innerHTML = `
             <div class="project-image">
-                <img src="${project.image}" alt="${project.title}" onerror="this.src='./public/images/placeholder.png'">
+                <img src="${project.image}" alt="${project.title}" onerror="this.src='/public/images/placeholder.png'">
                 <div class="project-overlay">
                     <div class="project-tags">${tagsHtml}</div>
                 </div>

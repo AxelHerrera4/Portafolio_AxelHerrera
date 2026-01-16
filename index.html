@@ -1,15 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axel Herrera - Portafolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-text">Axel<span class="highlight">Herrera</span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#certificates" class="nav-link">Certificados</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle">ES</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./public/images/AxelCara.JPG" alt="Axel Herrera">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting" data-es="¡Hola! Soy" data-en="Hi! I'm">¡Hola! Soy</span>
+                        <span class="name">Axel Herrera</span>
+                    </h1>
+                    <p class="hero-subtitle" data-es="Estudiante de Ingeniería en Software" data-en="Software Engineering Student">
+                        Estudiante de Ingeniería en Software
+                    </p>
+                    <p class="hero-description" data-es="Desarrollo web y optimización de procesos. Proactivo, adaptable y orientado a resultados." data-en="Web development and process optimization. Proactive, adaptable, results-oriented.">
+                        Desarrollo web y optimización de procesos. Proactivo, adaptable y orientado a resultados.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="mailto:axeldoge4@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            <span data-es="Contáctame" data-en="Contact Me">Contáctame</span>
+                        </a>
+                        <a href="./public/Certificate_Axel Samuel Herrera Aguiar.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            <span data-es="Descargar CV" data-en="Download CV">Descargar CV</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/AxelHerrera4" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/axel-herrera-83101b2aa/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/593988334397" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-es="Soy un estudiante de Ingeniería en Software apasionado por el desarrollo web y la creación de soluciones tecnológicas innovadoras. Me especializo en crear aplicaciones web modernas, sistemas de gestión y experiencias de usuario intuitivas." data-en="I'm a Software Engineering student passionate about web development and creating innovative technological solutions. I specialize in building modern web applications, management systems, and intuitive user experiences.">
+                        Soy un estudiante de Ingeniería en Software apasionado por el desarrollo web y la creación de soluciones tecnológicas innovadoras. Me especializo en crear aplicaciones web modernas, sistemas de gestión y experiencias de usuario intuitivas.
+                    </p>
+                    <p data-es="Además del desarrollo web tradicional, he incursionado en el desarrollo de videojuegos, participando en GameJams donde pongo a prueba mi creatividad y habilidades técnicas bajo presión." data-en="In addition to traditional web development, I've ventured into game development, participating in GameJams where I test my creativity and technical skills under pressure.">
+                        Además del desarrollo web tradicional, he incursionado en el desarrollo de videojuegos, participando en GameJams donde pongo a prueba mi creatividad y habilidades técnicas bajo presión.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3 class="stat-number">7+</h3>
+                        <p data-es="Proyectos" data-en="Projects">Proyectos</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3 class="stat-number">10+</h3>
+                        <p data-es="Tecnologías" data-en="Technologies">Tecnologías</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3 class="stat-number">1</h3>
+                        <p data-es="GameJam" data-en="GameJam">GameJam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & DB</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-php"></i> PHP</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> PostgreSQL</div>
+                        <div class="skill-item"><i class="fas fa-leaf"></i> MongoDB</div>
+                        <div class="skill-item"><i class="fas fa-server"></i> Apache</div>
+                        <div class="skill-item"><i class="fas fa-cubes"></i> .NET</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-briefcase"></i> Office</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-file-word"></i> Word</div>
+                        <div class="skill-item"><i class="fas fa-file-excel"></i> Excel</div>
+                        <div class="skill-item"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i> Power BI</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Sistema / IDE</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-windows"></i> Windows 11</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> VS Code</div>
+                        <div class="skill-item"><i class="fas fa-desktop"></i> Visual Studio</div>
+                        <div class="skill-item"><i class="fas fa-terminal"></i> Kali Linux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title" data-es="Certificados" data-en="Certificates">Certificados</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-es="Certificación Profesional" data-en="Professional Certificate">Certificación Profesional</h3>
+                    <p data-es="Documentación de habilidades y logros profesionales" data-en="Documentation of professional skills and achievements">
+                        Documentación de habilidades y logros profesionales
+                    </p>
+                    <a href="./public/Certificate_Axel Samuel Herrera Aguiar.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:axeldoge4@gmail.com">axeldoge4@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/593988334397" target="_blank">+593 988 334 397</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/AxelHerrera4" target="_blank">github.com/AxelHerrera4</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/axel-herrera-83101b2aa/" target="_blank">Axel Herrera</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-language"></i>
+                        <div>
+                            <h4 data-es="Idiomas" data-en="Languages">Idiomas</h4>
+                            <p data-es="Español (Nativo), Inglés (B1)" data-en="Spanish (Native), English (B1)">Español (Nativo), Inglés (B1)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre / Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Mensaje / Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Axel Herrera. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
